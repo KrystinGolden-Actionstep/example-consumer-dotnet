@@ -41,7 +41,7 @@ namespace tests
         public async Task RetrieveProducts()
         {
             // Arrange
-            pact.UponReceiving("A request to get products-TEST")
+            pact.UponReceiving("A request to get products")
                         .Given("products exist")
                         .WithRequest(HttpMethod.Get, "/products")
                     .WillRespond()
